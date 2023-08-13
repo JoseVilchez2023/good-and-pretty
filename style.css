@@ -4,14 +4,11 @@ body, h1, h2, p, ul, li, form {
     padding: 0;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
-
-
 
 header {
     background-color:blue;
