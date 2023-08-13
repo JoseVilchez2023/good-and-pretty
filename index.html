@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good And Pretty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GOOD AND PRETTY</h1>
+        <h2>Ropa para damas, caballeros y niños</h2>
+        <nav>
+            <ul>
+                <li><a href="#login">Inicio</a></li>
+                <li><a href="#pantalla-dividida">Catálogo</a></li>
+                <li><a href="#compras">Mis compras</a></li>
+                <li><a href="#login">Iniciar Sesión</a></li>
+                <li><a href="#register">Registrate</a></li>
+            </ul>
+            <button id="boton-buscador" type="submit">Buscar</button>
+            <input class="search" type="search" id="search" name="search" placeholder="¿Qué desea encontrar?">
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="login" class="login-section">
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_inicio_sesion.php" method="post">
+                <label for="loginEmail">Correo electrónico:</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="pepitoperez@compras.com" required>
+                <label for="loginPassword">Contraseña:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Iniciar Sesión</button>
+                <ul>
+                    <li id="restablecer">Restablecer contraseña</li>
+                    <br>
+                    <li id="registro">Registrarse</li>
+                </ul>
+            </form>
+        </section>
+        <section id="register" class="registration-section">
+            <h2>Registro</h2>
+            <form action="procesar_registro.php" method="post">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" placeholder="Pepito Pérez" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="pepitoperez@compras.com" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <main id="pantalla-dividida">
+        <div class="izquierda">
+            <h2 class="categoria">Damas</h2>
+        <section class="product">
+            <img src="imagenes/cartera-damas.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Cartera para damas</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/ropa interior damas.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Blumer</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"> <alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/jeans dama.jpeg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Pantalón levanta cola</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/blusa-para-dama-roja-.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Blusa</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+            <!-- Agrega más productos aquí -->
+        </div>
+        <div class="centro">
+            <h2 class="categoria">Caballeros</h2>
+        <section class="product">
+            <img src="imagenes/mono caballeros.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Mono para caballeros</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/chaqueta caba.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Chaqueta</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/camisas caba.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Camisa caballeros</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/pantalones caba.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Pantalón para caballeros</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <!-- Agrega más productos aquí -->
+        </div>
+        <div class="derecha">
+            <h2 class="categoria">Niños</h2>
+        <section class="product">
+            <img src="imagenes/short niños.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Short</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/franelas niños.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Franelas</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/camisas niños.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Camisas</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+        <section class="product">
+            <img src="imagenes/pantalon niños.jpg" alt="Producto 2">
+            <!-- <label class="info" for="cantidadInput">Cantidad:</label> -->
+            <h2 class="miH2">Pantalón</h2>
+            <input type="number" class="cantidad" placeholder="Cantidad" min="1" value="1">
+            <p class="precio">Precio: $49.99</p>
+            <button class="carro">Agregar al carrito</button>
+            <label>
+            <input type="checkbox" class="seleccionado"><alt="">
+            </label>
+        </section>
+            <!-- Agrega más productos aquí -->
+        </div>
+    </main>
+    <main>
+        <section id="compras">
+            <h1>Mis compras</h1>
+            <div>
+                <table class="resultado">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario ($)</th>
+                        <th class="total">Total</th>
+                    </tr>
+                </table>
+                <p id="totalGeneral">Total General: $0.00</p>
+                <button id="btnPagar">Pagar Total</button>
+            <div id="opcionesPago" class="opciones-pago">
+                <button id="pagoTarjeta">Pago con Tarjeta de Crédito</button>
+                <button id="pagoTransferencia">Pago con Transferencia Bancaria</button>
+                <button id="pagoConsignacion">Pago por Consignación</button>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tu Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

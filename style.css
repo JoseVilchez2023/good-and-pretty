@@ -1,0 +1,298 @@
+
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:blue;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    /* left: 30%; */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(4, 2, 13);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: red;
+    transition: .4s;
+}
+
+nav a:active {
+    color: blue;
+}
+
+#boton-buscador {
+    background-color: grey;
+    text-align: left;
+    /* margin-left: 110px; */
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+#boton-buscador:hover {
+    background-color: #555;
+}
+
+.search {
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+::placeholder {
+     color: #ccc;
+}
+
+/* SECCIÓN DE REGISTRO E INICIO DE SESIÓN */
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-section, .registration-section {
+    flex-basis: 45%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2, p2 {
+    text-align: center ;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #333;
+    margin-left: 110px;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+form ul {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color:#555;
+    cursor: pointer;
+}
+
+form ul #restablecer:hover {
+    color: blue;
+}
+
+form ul #restablecer:active {
+    color: black;
+}
+
+form ul #registro:hover {
+    color:red;
+}
+
+form ul #registro:active {
+    color: black;
+}
+ 
+/* SECCION DE PANTALLA DIVIDIDA */
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#pantalla-dividida {
+    background-color: #ccc;
+}
+
+.categoria {
+    background-color: blue;
+    border: 3px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product:hover {
+    background-color: #f4f4f4;
+}
+
+.product img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.cantidad {
+    width: 40px;
+    background-color: #555;
+    color: white;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.seleccionado {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.seleccionado img {
+    width: 0.5px;
+}
+
+/* SECCION IZQUIERDA */
+
+.izquierda {
+    float: left;
+}
+
+ /* SECCION DERECHA */
+
+ .derecha {
+    float: right;
+}
+
+/* SECCION DE COMPRAS */
+
+table {
+    background-color: purple;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    width: 800px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+#totalGeneral {
+    background-color: red;
+    width: 250px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 66%;
+}
+
+.opciones-pago {
+    display: none;
+}
+
+/* PIE DE PAGINA */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
