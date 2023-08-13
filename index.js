@@ -53,6 +53,36 @@ function mostrarMensaje(mensaje) {
 }
 
 
+// SECCION DE BUSQUEDA
+
+// BOTON Y CASILLA DE DATOS
+
+const botonBuscador = document.getElementById("boton-buscador");
+const inputBusqueda = document.getElementById("search");
+const productos = document.querySelectorAll(".product");
+
+botonBuscador.addEventListener("click", function () {
+    realizarBusqueda();
+});
+
+inputBusqueda.addEventListener("input", function () {
+    realizarBusqueda();
+});
+
+function realizarBusqueda() {
+    const terminoBusqueda = inputBusqueda.value.toLowerCase();
+
+    productos.forEach(producto => {
+        const nombreProducto = producto.querySelector(".miH2").textContent.toLowerCase();
+
+        if (nombreProducto.includes(terminoBusqueda)) {
+            producto.style.display = "block"; // Mostrar producto si coincide con la búsqueda
+        } else {
+            producto.style.display = "none"; // Ocultar producto si no coincide con la búsqueda
+        }
+    });
+}
+
 // SECCION DE BOTON AGREGAR AL CARRITO
 
 
